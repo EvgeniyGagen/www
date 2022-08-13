@@ -1,11 +1,12 @@
-﻿int[] array = {1, 2, 3, 4, 5, 6};
+﻿int[] array = {1, 2, 3, 4, 5};
 int n = array.Length;
 int index = 0;
 while(index < n)
 {
     if(array[index] % 2==0)
     {
-        Console.WriteLine("четное число");
+        Console.Write("четное число -");
+        Console.WriteLine(array[index]);
     }
     else
     {
