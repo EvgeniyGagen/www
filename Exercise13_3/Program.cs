@@ -1,17 +1,17 @@
 ﻿using System;
 class Program
 {
-    static void SelectRase()
+    static void SelectNumb()
     {
-        string[] namesRase = {"3","2","6","7","9"};
-        for (int i = 0; i < namesRase.Length-1; i++)
+        string[] Numbers = {"3","2","6","7","9"};
+        for (int i = 0; i < Numbers.Length-1; i++)
         {
-            Console.Write(i+1 + " - " + namesRase[i] + ", ");
+            Console.Write(i+1 + " - " + Numbers[i] + ", ");
         }
-        Console.WriteLine(namesRase.Length + " - " + namesRase[namesRase.Length-1] + ".");
+        Console.WriteLine(Numbers.Length + " - " + Numbers[Numbers.Length-1] + ".");
         Console.WriteLine("Укажите вашу позицию? ");
-        int numberRase = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Ваша число: " + namesRase[numberRase-1]);
+        int number = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ваша число: " + Numbers[number-1]);
     }
     
     
@@ -26,7 +26,7 @@ class Program
 
     static void Main(string[] arg)
     {
-        SelectRase();
+        SelectNumb();
         //SelectSex();
         //SelectClass();
     }
